@@ -37,7 +37,7 @@ class DrawerWidget extends StatelessWidget {
                     Positioned(
                       bottom: -12,
                       right: 0,
-                      left: 45,
+                      left: 50,
                       child: IconButton(
                         onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(
@@ -46,7 +46,7 @@ class DrawerWidget extends StatelessWidget {
                         },
                         icon: const Icon(
                           Icons.edit,
-                          color: Colors.black,
+                          color: greyColor,
                           size: 20,
                         ),
                       ),
@@ -84,7 +84,7 @@ class DrawerWidget extends StatelessWidget {
                     text: "Search Courses",
                     color: redColor,
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
@@ -105,7 +105,7 @@ class DrawerWidget extends StatelessWidget {
                     text: "My Courses",
                     color: greyColor,
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
@@ -126,7 +126,7 @@ class DrawerWidget extends StatelessWidget {
                     text: "Purchased Courses",
                     color: greyColor,
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
@@ -142,7 +142,7 @@ class DrawerWidget extends StatelessWidget {
                     text: "Settings",
                     color: greyColor,
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
@@ -158,7 +158,7 @@ class DrawerWidget extends StatelessWidget {
                     text: "About Us",
                     color: greyColor,
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),

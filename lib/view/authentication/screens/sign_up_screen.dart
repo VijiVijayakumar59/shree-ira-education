@@ -149,9 +149,9 @@ class SignUpScreen extends StatelessWidget {
                     // }
                   },
                   style: ButtonStyle(
-                    shape: const MaterialStatePropertyAll(RoundedRectangleBorder()),
-                    backgroundColor: MaterialStateProperty.all<Color>(Colors.orange),
-                    foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                    shape: const WidgetStatePropertyAll(RoundedRectangleBorder()),
+                    backgroundColor: WidgetStateProperty.all<Color>(Colors.orange),
+                    foregroundColor: WidgetStateProperty.all<Color>(Colors.white),
                   ),
                   child: const Text('Sign Up'),
                 ),

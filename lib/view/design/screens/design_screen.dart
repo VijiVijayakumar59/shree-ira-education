@@ -16,7 +16,7 @@ class DesignScreen extends StatelessWidget {
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(100),
+          preferredSize: const Size.fromHeight(80),
           child: AppBar(
             leading: IconButton(
                 onPressed: () {
@@ -85,7 +85,7 @@ class DesignScreen extends StatelessWidget {
                               children: [
                                 Container(
                                   height: size.height * 0.13,
-                                  width: size.width * 0.4,
+                                  width: size.width * 0.42,
                                   margin: const EdgeInsets.only(right: 10),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(14.0),

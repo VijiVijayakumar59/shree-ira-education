@@ -141,8 +141,8 @@ class CartScreen extends StatelessWidget {
                             width: size.width * 0.35,
                             child: ElevatedButton(
                               style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(themeColor),
-                                shape: MaterialStateProperty.all(
+                                backgroundColor: WidgetStateProperty.all(themeColor),
+                                shape: WidgetStateProperty.all(
                                   RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(5),
                                     side: const BorderSide(color: greyColor),
@@ -164,8 +164,8 @@ class CartScreen extends StatelessWidget {
                         width: double.infinity,
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(redColor),
-                            shape: MaterialStateProperty.all(
+                            backgroundColor: WidgetStateProperty.all(redColor),
+                            shape: WidgetStateProperty.all(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5),
                                 side: const BorderSide(color: greyColor),

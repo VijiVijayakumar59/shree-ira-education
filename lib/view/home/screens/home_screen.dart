@@ -83,8 +83,8 @@ class HomeScreen extends StatelessWidget {
                             ),
                             ElevatedButton(
                               style: const ButtonStyle(
-                                backgroundColor: MaterialStatePropertyAll(themeColor),
-                                shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                                backgroundColor: WidgetStatePropertyAll(themeColor),
+                                shape: WidgetStatePropertyAll(RoundedRectangleBorder(
                                   borderRadius: BorderRadius.all(Radius.circular(4)),
                                 )),
                               ),

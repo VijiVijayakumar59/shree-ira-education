@@ -66,7 +66,11 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           ],
         ),
         body: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.only(
+            top: 18,
+            left: 30,
+            right: 30,
+          ),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -77,14 +81,14 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     child: Stack(
                       children: [
                         CircleAvatar(
-                          radius: 50,
+                          radius: 60,
                           backgroundColor: Colors.grey[200],
                           child: _image != null
                               ? ClipOval(
                                   child: Image.file(
                                     _image!,
-                                    width: 100,
-                                    height: 100,
+                                    width: size.width * 0.1,
+                                    height: size.height * 0.1,
                                     fit: BoxFit.cover,
                                   ),
                                 )
@@ -96,7 +100,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         ),
                         Positioned(
                           bottom: 0,
-                          left: 70,
+                          left: 80,
                           right: 25,
                           child: IconButton(
                             onPressed: getImageFromCamera,
@@ -108,7 +112,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     ),
                   ),
                 ),
-                const KHeight(size: 0.02),
+                const KHeight(size: 0.03),
                 CustomTextFieldWidget(controller: firstNameController, label: "First Name *"),
                 const KHeight(size: 0.02),
                 CustomTextFieldWidget(controller: lastNameController, label: "Last Name *"),
@@ -119,10 +123,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 const KHeight(size: 0.02),
                 CustomTextFieldWidget(controller: addressController, label: "Address *"),
                 const KHeight(size: 0.02),
-                const CustomTextFieldWidget(
-                  label: "Detail *",
-                  maxLines: 4,
-                ),
+                const CustomTextFieldWidget(label: "Detail *", maxLines: 4),
                 const KHeight(size: 0.02),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -133,13 +134,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         child: ElevatedButton(
                           onPressed: () {},
                           style: ButtonStyle(
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(6.0),
                               ),
                             ),
-                            backgroundColor: MaterialStateProperty.all<Color>(Colors.orange),
-                            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: WidgetStateProperty.all<Color>(Colors.orange),
+                            foregroundColor: WidgetStateProperty.all<Color>(Colors.white),
                           ),
                           child: const Text(
                             'Update',
