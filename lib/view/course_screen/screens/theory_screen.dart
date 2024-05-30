@@ -4,7 +4,7 @@ import 'package:shreeiraeducation/utils/rating/rating_widget.dart';
 import 'package:shreeiraeducation/utils/size/constant_height/constant_height.dart';
 import 'package:shreeiraeducation/utils/size/constant_width/constant_width.dart';
 import 'package:shreeiraeducation/utils/text/custom_text.dart';
-import 'package:shreeiraeducation/view/course/widgets/course_brief_widget.dart';
+import 'package:shreeiraeducation/view/course_screen/widgets/course_brief_widget.dart';
 
 class TheoryScreen extends StatelessWidget {
   const TheoryScreen({

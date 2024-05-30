@@ -12,8 +12,6 @@ class EditProfileScreen extends StatefulWidget {
   const EditProfileScreen({
     super.key,
   });
-  // final Map<String, dynamic> user;
-
   @override
   _EditProfileScreenState createState() => _EditProfileScreenState();
 }

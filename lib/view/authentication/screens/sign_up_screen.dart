@@ -16,7 +16,6 @@ class SignUpScreen extends StatelessWidget {
     TextEditingController nameController = TextEditingController();
     TextEditingController confirmController = TextEditingController();
     final GlobalKey<FormState> loginKey = GlobalKey<FormState>();
-    // final AuthService authService = AuthService();
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(28.0),
@@ -112,41 +111,11 @@ class SignUpScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () async {
-                    // if (loginKey.currentState!.validate()) {
-                    //   log('Validation success');
-                    //   Map<String, dynamic>? loginResult = await authService.login(
-                    //     emailController.text,
-                    //     passwordController.text,
-                    //   );
-                    //   log('Login Result: $loginResult');
-                    //   if (loginResult != null) {
-                    //     if (loginResult.containsKey('access_token')) {
-                    //       log('Login successful');
-                    //       Map<String, dynamic> user = loginResult['user'];
-
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => const HomeScreen(),
                       ),
                     );
-                    //     } else if (loginResult.containsKey('error')) {
-                    //       String errorMessage = loginResult['error'];
-                    //       ScaffoldMessenger.of(context).showSnackBar(
-                    //         SnackBar(
-                    //           content: Text('Login failed: $errorMessage'),
-                    //           duration: const Duration(seconds: 2),
-                    //         ),
-                    //       );
-                    //     }
-                    //   } else {
-                    //     ScaffoldMessenger.of(context).showSnackBar(
-                    //       const SnackBar(
-                    //         content: Text('Login failed. Please try again.'),
-                    //         duration: Duration(seconds: 2),
-                    //       ),
-                    //     );
-                    //   }
-                    // }
                   },
                   style: ButtonStyle(
                     shape: const WidgetStatePropertyAll(RoundedRectangleBorder()),

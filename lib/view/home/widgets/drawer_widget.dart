@@ -20,39 +20,32 @@ class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      surfaceTintColor: whiteColor,
-      child: ListView(
-        children: [
+        surfaceTintColor: whiteColor,
+        child: ListView(children: [
           DrawerHeader(
-            decoration: const BoxDecoration(color: themeColor),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Stack(
-                  children: [
-                    const CircleAvatar(
-                      radius: 38,
-                      backgroundImage: AssetImage("assets/images/profile.png"),
-                    ),
-                    Positioned(
+              decoration: const BoxDecoration(color: themeColor),
+              child: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Stack(children: [
+                  const CircleAvatar(
+                    radius: 38,
+                    backgroundImage: AssetImage("assets/images/profile.png"),
+                  ),
+                  Positioned(
                       bottom: -12,
                       right: 0,
                       left: 50,
                       child: IconButton(
-                        onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const EditProfileScreen(),
-                          ));
-                        },
-                        icon: const Icon(
-                          Icons.edit,
-                          color: greyColor,
-                          size: 20,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => const EditProfileScreen(),
+                            ));
+                          },
+                          icon: const Icon(
+                            Icons.edit,
+                            color: greyColor,
+                            size: 20,
+                          )))
+                ]),
                 const KHeight(size: 0.01),
                 const CustomText(
                   text: "Solarc",
@@ -65,30 +58,24 @@ class DrawerWidget extends StatelessWidget {
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
                   color: whiteColor,
-                ),
-              ],
-            ),
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              GestureDetector(
+                )
+              ])),
+          Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+            GestureDetector(
                 onTap: () {},
                 child: const ListTile(
-                  leading: Icon(
-                    CupertinoIcons.search,
-                    size: 26,
-                    color: redColor,
-                  ),
-                  title: CustomText(
-                    text: "Search Courses",
-                    color: redColor,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-              GestureDetector(
+                    leading: Icon(
+                      CupertinoIcons.search,
+                      size: 26,
+                      color: redColor,
+                    ),
+                    title: CustomText(
+                      text: "Search Courses",
+                      color: redColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ))),
+            GestureDetector(
                 onTap: () {
                   Navigator.pop(context);
                   Navigator.of(context).push(MaterialPageRoute(
@@ -96,20 +83,18 @@ class DrawerWidget extends StatelessWidget {
                   ));
                 },
                 child: const ListTile(
-                  leading: Icon(
-                    Icons.my_library_books_outlined,
-                    size: 26,
-                    color: greyColor,
-                  ),
-                  title: CustomText(
-                    text: "My Courses",
-                    color: greyColor,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-              GestureDetector(
+                    leading: Icon(
+                      Icons.my_library_books_outlined,
+                      size: 26,
+                      color: greyColor,
+                    ),
+                    title: CustomText(
+                      text: "My Courses",
+                      color: greyColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ))),
+            GestureDetector(
                 onTap: () {
                   Navigator.pop(context);
                   Navigator.of(context).push(MaterialPageRoute(
@@ -117,55 +102,46 @@ class DrawerWidget extends StatelessWidget {
                   ));
                 },
                 child: const ListTile(
-                  leading: Icon(
-                    Icons.privacy_tip_outlined,
-                    size: 26,
-                    color: greyColor,
-                  ),
-                  title: CustomText(
-                    text: "Purchased Courses",
-                    color: greyColor,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-              GestureDetector(
+                    leading: Icon(
+                      Icons.privacy_tip_outlined,
+                      size: 26,
+                      color: greyColor,
+                    ),
+                    title: CustomText(
+                      text: "Purchased Courses",
+                      color: greyColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ))),
+            GestureDetector(
                 onTap: () {},
                 child: const ListTile(
-                  leading: Icon(
-                    Icons.settings_outlined,
-                    color: greyColor,
-                    size: 26,
-                  ),
-                  title: CustomText(
-                    text: "Settings",
-                    color: greyColor,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-              GestureDetector(
+                    leading: Icon(
+                      Icons.settings_outlined,
+                      color: greyColor,
+                      size: 26,
+                    ),
+                    title: CustomText(
+                      text: "Settings",
+                      color: greyColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ))),
+            GestureDetector(
                 onTap: () {},
                 child: const ListTile(
-                  leading: Icon(
-                    Icons.info_outline,
-                    size: 26,
-                    color: greyColor,
-                  ),
-                  title: CustomText(
-                    text: "About Us",
-                    color: greyColor,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
+                    leading: Icon(
+                      Icons.info_outline,
+                      size: 26,
+                      color: greyColor,
+                    ),
+                    title: CustomText(
+                      text: "About Us",
+                      color: greyColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    )))
+          ])
+        ]));
   }
 }
